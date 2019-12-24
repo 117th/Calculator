@@ -39,6 +39,7 @@ public class CliClient {
 
         try {
             while (true) {
+                System.out.print("Expression: ");
                 exp = scanner.nextLine().toUpperCase();
                 if(exp.contains("SERVER=")){
                     String[] args = exp.replaceAll("SERVER=", "").split(":");
